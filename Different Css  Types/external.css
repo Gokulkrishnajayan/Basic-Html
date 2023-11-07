@@ -1,0 +1,19 @@
+        h1 {
+            text-align: center;
+            font-size: xx-large;
+            color: red;
+        }
+
+        p{
+            color: blue;
+        }
+        li {
+            color: rgb(238, 132, 11);
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
