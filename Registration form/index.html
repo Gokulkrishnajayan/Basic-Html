@@ -1,0 +1,80 @@
+<html>
+
+<head></head>
+<title>Registration Form</title>
+<style>
+    body{
+        background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+    }
+    th {
+        text-align: start;
+        color: antiquewhite;
+    }
+    h1,label{
+      color: aliceblue;
+    }
+</style>
+</head>
+
+<body>
+    <form action="success.html">
+        <center>
+            <h1>Registration Form</h1>
+        </center>
+        <table border="0" align="center">
+            <tr>
+                <th><label for="name">Name</label></th>
+                <th>:</th>
+                </th>
+                <th><input type="text" placeholder="Enter name"></th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th><label for="email">Email</label></th>
+                <th>:</th>
+                <th><input type="email" placeholder="Enter email"></th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th><label for="phone">Telephone</label></th>
+                <th>:</th>
+                <th><input type="tel" placeholder="Enter number" pattern="[789][0-9]{9}"></th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th><label for="gender">Gender</label></th>
+                <th>:</th>
+                <th><label for="gender">Male</label><input type="radio" name="gender" value="male">
+                    <label for="gender">Female</label><input type="radio" name="gender" value="female">
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th><label for="hobbies">Hobbies</label></th>
+                <th>:</th>
+                <th><label>Running</label><input type="checkbox"><Label>Reading</Label><input type="checkbox"></th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th><label for="nationality">Nationality</label></th>
+                <th>:</th>
+                <th>
+                    <select id="nation" name="nation">
+                        <option value="India">India</option>
+                        <option value="China">China</option>
+                        <option value="Usa">Usa</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th><input type="submit"><input type="reset"></th>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+
+</html>
