@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scripting</title>
+</head>
+<body bgcolor="lightpink">
+    <h1>String Fuctions</h1>
+
+    <label for="str1">Enter your String 1 :</label><input type="text" id="str1">
+    <br><br>
+    <label for="str1">Enter your String 2 :</label><input type="text" id="str2">
+    <br><br>
+    <label for="str1">How many times to repeat the string :</label><input type="text" id="repeat">
+    <br><br>
+    <button id="btn1" onclick="String_fun()">Create</button>
+
+    <ol id="output1" type="1"></ol>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <label for="num">Enter a number :</label><input type="text" id="num">
+    <br><br>
+    <label for="numpower">Power term :</label><input type="text" id="numpower">
+    <br><br>
+    <button id="btn2" onclick="Math_fun()">Create</button>
+    <br><br>
+    <ol id="output2" type="1"></ol>
+</body>
+<script>
+    function String_fun(){
+        let str1=document.getElementById('str1').value;
+        let str2=document.getElementById('str2').value;
+        let count=document.getElementById('repeat').value;
+        let li_O='<li>';
+        let li_C='</li>';
+        let list=li_O +"String 1 to lowercase letters:"+str1.toLowerCase()+li_C;
+        list +=li_O +"String 1 to uppercase letters:"+str1.toUpperCase()+li_C;
+        list +=li_O +"Character at position 4:"+str1.charAt(4)+li_C;
+        list +=li_O +"Repeat string 1 in count "+count+" times:"+str1.repeat(count)+li_C;
+        list +=li_O +"Length of the string 1:"+str1.length+li_C;
+        list +=li_O +"Last index position of the string 1:"+str1.lastIndexOf()+li_C;
+        list +=li_O +"Concatenates string 1 and string 2:"+str1.concat('',str2)+li_C;
+        list +=li_O +"Slice positon 3 to 6 of string 1:"+str1.slice(3,6)+li_C;
+        document.getElementById('output1').innerHTML=(list);
+    }
+
+    function Math_fun(){
+        let num=document.getElementById('num').value;
+        let power=document.getElementById('numpower').value;
+        let li_O='<li>';
+        let li_C='</li>';
+        let list=li_O+"Value of Pi :"+Math.PI+li_C;
+        list +=li_O+"square root of "+num+" is :"+Math.sqrt(num)+li_C;
+        list +=li_O+num+"raise to "+power+" is :"+Math.pow(num,power)+li_C;
+        list +=li_O+"Round of "+num+" is :"+Math.round(num)+li_C;
+        list +=li_O+"Floor value of "+num+" is :"+Math.floor(num)+li_C;
+        list +=li_O+"A random number is :"+Math.random()+li_C;
+        list +=li_O+"Sin value of "+num+" is :"+Math.sin(num*Math.PI/180)+li_C;
+        list +=li_O+"Cos value of "+num+" is :"+Math.cos(num*Math.PI/180)+li_C;
+        document.getElementById('output2').innerHTML=(list);
+    }
+
+</script>
+</html>
