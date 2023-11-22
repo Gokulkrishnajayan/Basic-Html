@@ -1,0 +1,67 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    background-image: url(cal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#input{
+    color: whitesmoke;
+
+}
+i{
+    color: aliceblue;
+}
+li {
+    list-style: none;
+    padding: 5px;
+
+}
+
+#current-date {
+    margin-bottom: 30px;
+
+}
+
+#calender {
+    background-color: #ffffff;
+    margin: 10px 100px;
+    padding: 30px 150px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+#calender-data {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.last-month {
+    color: teal;
+
+}
+
+input, select, button {
+    font-size: 22px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+#input {
+    margin-left: 50px;
+    margin-bottom: 30px;
+
+}
+
+.day {
+    color: rgb(44, 43, 41);
+    background-color: rgb(5, 168, 114);
+    
+}
