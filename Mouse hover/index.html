@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Change</title>
+</head>
+<body bgcolor="#FFBF00">
+    <center>
+        <br><br>
+        <h1>Image hover</h1>
+        <img src="image 1.jpg" id="image" alt="no image" width="300" height="200">
+    </center>    
+</body>
+<script>
+    function image_hover(){
+        document.getElementById("image").src="image 2.jpg";
+    }
+    function image_no_hover(){
+        document.getElementById("image").src="image 1.jpg";
+    }
+
+    image.addEventListener("mousemove", image_hover);
+    image.addEventListener("mouseout", image_no_hover);
+</script>
+</html>
