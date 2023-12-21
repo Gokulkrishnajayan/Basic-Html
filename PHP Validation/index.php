@@ -60,6 +60,9 @@ if (isset($_POST['submit'])){
             else {
                 echo "<script>alert('Password not valid')</script>";
             }   
+        }
+        else {
+            echo "<script> location.href='success.html'; </script>";
         }   
     }    
 }
